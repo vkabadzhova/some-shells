@@ -6,7 +6,7 @@ Some pretty light shells for school
 ### mainstruct.sh
 Designed for OS classes. Common task is to implement a single function from the standard library. It creates a standardized file.
 
-![function prototype](../../../../Pictures/bashscr.png)
+![function prototype](../media/bashscr_.png?raw=true)
 
 #### Arguments:
 1. a file name
@@ -22,4 +22,4 @@ It has:
 If there's **no specified file**, the program exits with 1.*
 
 #### Generated file demo
-![Generated file structure](../../../../Pictures/file_struct.png)
+![Generated file structure](../media/file_struct.png?raw=true)
