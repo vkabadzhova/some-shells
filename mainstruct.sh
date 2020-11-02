@@ -1,5 +1,31 @@
 #!bin/bash
 
+Help()
+{
+	echo 'Run using bash command!'
+	echo
+	echo Syntax
+	echo ..Or otherwise said, how do I use it: 
+	echo "bash ./mainstruct [file name] \"[function's prototype]\""	
+	echo
+
+	echo "If file name not specified, the program will not be executed."
+	echo "If the function's prototype is not specified, the program will be executed \
+and this will result in main and basic comments only"
+	echo 
+	echo "If there's a file already with the same name, the program will overwrite it"
+
+}
+
+while getopts ":h" option; do
+	case $option in
+		h) #sksdjs
+			Help
+			exit;;
+	esac
+done
+
+
 filename="$1"
 funcinit="$2"
 NEWLINESFUNC="\n{\n\n}\n"
